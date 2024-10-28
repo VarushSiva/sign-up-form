@@ -8,6 +8,8 @@ body {
   padding: 0;
   margin: 0;
   background-color: rgba(234, 234, 234, 0.5);
+  font-family: sans-serif;
+  font-weight: bold;
 }
 .container {
   display: flex;
@@ -17,11 +19,11 @@ body {
 
 .side-image {
   width: 33%;
+  height: 100%;
   background-image: url(files/halie-west-25xggax4bSA-unsplash.jpg);
   background-size: cover;
   background-position: center;
   color: white;
-  padding-top: 10%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -31,6 +33,7 @@ body {
 #logo {
   width: 100%;
   height: 125px;
+  margin-top: 40%;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
@@ -53,16 +56,18 @@ a:link {
   height: 100%;
 }
 #head-text {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   padding: 5%;
   width: 55%;
-  padding-top: 100px;
+  margin-top: 20px;
   font-weight: 800;
 }
 
 form {
   padding: 10px 5%;
   background-color: white;
+  box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.1);
+  font-size: 0.8rem;
 }
 
 form > div {
@@ -80,5 +85,50 @@ form > div > div {
 form > div > div > div {
   display: flex;
   flex-direction: column;
-  font-size: 0.9rem;
+  font-size: 0.8em;
+}
+
+#login {
+  color: rgb(19, 95, 19);
+  text-decoration: none;
+}
+
+.bottom-content {
+  padding: 30px 5%;
+  font-weight: bold;
+}
+
+#create {
+  background-color: #596d48;
+  color: rgba(234, 234, 234);
+  border-color: rgb(71, 109, 71);
+  padding: 10px 50px;
+  border-radius: 7px;
+  font-weight: bold;
+  box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.3);
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  padding: 4px 5px;
+}
+
+input:focus {
+  outline: 1px solid blue;
+  box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.3);
+}
+
+input:valid {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgb(161, 161, 161, 0.3);
+  border-radius: 4px;
+  padding: 4px 5px;
+}
+
+input:invalid {
+  outline: 1px solid red;
 }

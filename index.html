@@ -48,27 +48,46 @@
             <div>
               <div class="email">
                 <label for="email">EMAIL</label>
-                <input type="email" name="email" id="email" />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  title="only gmails - example@gmail.com"
+                />
               </div>
               <div class="phonenumber">
                 <label for="phonenumber">PHONE NUMBER</label>
-                <input type="tel" name="phonenumber" id="phonenumber" />
+                <input
+                  type="tel"
+                  name="phonenumber"
+                  id="phonenumber"
+                  pattern="(\d{10})"
+                />
               </div>
             </div>
             <div>
               <div class="password">
                 <label for="password">PASSWORD</label>
-                <input type="password" name="password" id="password" />
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  title="Must contain atleast 8 characters"
+                  minlength="8"
+                  required
+                />
               </div>
               <div class="confirm">
                 <label for="confirm">CONFIRM PASSWORD</label>
-                <input type="password" name="confirm" id="confirm" />
+                <input type="password" name="confirm" id="confirm" required />
               </div>
             </div>
           </div>
         </form>
-        <button>Create Account</button>
-        <p>Already have an account? <a href="#">Log in</a></p>
+        <div class="bottom-content">
+          <button type="submit" id="create">Create Account</button>
+          <p>Already have an account? <a href="#" id="login">Log in</a></p>
+        </div>
       </div>
     </div>
   </body>
